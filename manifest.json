@@ -1,0 +1,14 @@
+{
+    "manifest_version": 1,
+   
+    "name": "iRacing Modern Profile",
+    "version": "0.1.0",
+    "description": "Bring your iRacing profile page out of the 90's and into the modern day with an updated design and new functionality.",
+   
+    "content_scripts": [{
+      "css": ["irmp.css"],
+      "js": ["irmp.js"],
+      "matches": ["https://members.iracing.com/membersite/member/*"]
+    }]
+   
+  }
