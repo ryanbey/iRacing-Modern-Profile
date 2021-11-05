@@ -17,4 +17,4 @@ document.body.innerHTML =
 '<p>yup thats cool hopefully it works</p>';
 
 // trying to use external html file, not working yet, keep Googling
-$( body ).load( "directory/test.html" );
+// $( body ).load( "directory/test.html" );
