@@ -7,7 +7,7 @@
    
     "content_scripts": [{
       "css": ["irmp.css"],
-      "js": ["irmp.js"],
+      "js": ["js/irmp.js"],
       "matches": ["https://members.iracing.com/membersite/member/*"]
     }]
    
