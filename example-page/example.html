@@ -5,40 +5,42 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="scss/styles.css"/>
    <title>Driver Career
    </title>
 </head>
 
 <body>
    <header>
-      <img src="images/iracing-inline-color-white.webp" alt="iracing header logo">
-      <nav>
-         <ul>
+      <div class="header-content">
+         <img src="images/iracing-inline-color-white.webp" alt="iracing header logo">
+         <nav>
+            <ul>
             <li>Home</li>
             <li>Official Races</li>
-            <ul>
+            <!-- <ul>
                <li>Official Race Guide</li>
                <li>Popular Races Guide</li>
                <li>Curent Series</li>
                <li>Watch / Ghost / Crew / Spot</li>
                <li>iRacing Race Schedule (PDF)</li>
-            </ul>
+            </ul> -->
             <li>Hosted</li>
-            <ul>
+            <!-- <ul>
                <li>Join a Race</li>
                <li>Host a Race</li>
                <li>Hosted Results</li>
                <li>Host a Tournament Race</li>
                <li>Tournament Results</li>
-            </ul>
+            </ul> -->
             <li>Leagues</li>
-            <ul>
+            <!-- <ul>
                <li>League Directory</li>
                <li>League Sessions</li>
                <li>Pending League Requests</li>
-            </ul>
+            </ul> -->
             <li>Teams</li>
-            <ul>
+            <!-- <ul>
                <li>About Teams</li>
                <li>My Teams</li>
                <li>All Teams</li>
@@ -49,10 +51,10 @@
                   <li>Customize Car(s)</li>
                   <li>Customize Suit</li>
                </ul>
-            </ul>
+            </ul> -->
             <li>Time Attack</li>
             <li>Store</li>
-            <ul>
+            <!-- <ul>
                <li>Buy Cars</li>
                <li>Buy Tracks</li>
                <li>Buy Tech Tracks</li>
@@ -62,9 +64,9 @@
                <li>Refer a Friend</li>
                <li>Wheels & Pedals</li>
                <li>iRacing Merchandise</li>
-            </ul>
+            </ul> -->
             <li>Account</li>
-            <ul>
+            <!-- <ul>
                <li>My Account</li>
                <li>My Profile</li>
                <li>My Race Participation</li>
@@ -78,18 +80,18 @@
                   <li>Customize Helmet</li>
                   <li>Customize Suit</li>
                </ul>
-            </ul>
+            </ul> -->
             <li>Results & Stats</li>
-            <ul>
+            <!-- <ul>
                <li>My Series Results</li>
                <li>My Replays</li>
                <li>Series Stats</li>
                <li>Team Series Stats</li>
                <li>Drivers Stats</li>
                <li>World Records</li>
-            </ul>
+            </ul> -->
             <li>Help</li>
-            <ul>
+            <!-- <ul>
                <li>FAQs</li>
                <li>How-to Videos</li>
                <li>Sporting Code</li>
@@ -99,27 +101,31 @@
                <li>Support</li>
                <li>Fast Support</li>
                <li>Contact Us</li>
-            </ul>
+            </ul> -->
             <li>Forum</li>
-            <ul>
+            <!-- <ul>
                <li>New Forum</li>
-            </ul>
+            </ul> -->
             <li>Settings</li>
             <li>Logout</li>
-         </ul>
-      </nav>
+            </ul>
+         </nav>
+      </div>
    </header>
 
    <main>
-      <section class="personal-stats">
-         <h1>Personal Stats</h1>
-         <article class="driver-card">
-            <img src="https://via.placeholder.com/242x182" alt="driver profile picture">
-            <h2 id="driver-card-name">First Last</h2>
-            <img src="https://via.placeholder.com/101x26" alt="driver year badge">
-            <img src="https://via.placeholder.com/128x32" alt="driver club image">
-         </article>
-         <article class="driver-book">
+      <h1>Personal Stats</h1>
+      <div class="personal-stats">
+         <section class="driver-card">
+            <img class="driver-card-img" src="images/ph-profile.png" alt="driver profile picture">
+            <h2 class="driver-card-name">First Last</h2>
+            <img class="driver-card-badge" src="images/ph-badge.png" alt="driver year badge">
+            <img class="driver-card-club" src="images/ph-club.png" alt="driver club image">
+            <select name="profile" class="driver-card-select" id="driver-card-select">
+               <option value="default">My Profile</option>
+            </select>
+         </section>
+         <section class="driver-book">
             <div class="driver-info-container">
                <h3 class="driver-book-heading">Information</h3>
                <!-- <textarea name="driver-info" id="driver-info" cols="30" rows="10" class="driver-info-text-area"></textarea> -->
@@ -128,20 +134,20 @@
                <h3 class="driver-book-heading">Biography</h3>
                <!-- <textarea name="driver-bio" id="driver-bio" cols="30" rows="10" class="driver-info-text-area"></textarea> -->
             </div>
-         </article>
-      </section>
+         </section>
+      </div>
 
       <section class="license-stats">
          <div class="license-stats-menu">
-            <!-- 4 disciplines with class, iRacint, and ttRating -->
+            <!-- 4 disciplines with class, iRating, and ttRating -->
          </div>
          <div class="license-stats-graph">
             <!-- iRating, ttRating, license graph area -->
          </div>
       </section>
 
+      <h2>Career Stats</h2>
       <section class="career-stats">
-         <h2>Career Stats</h2>
          <table id="table-career" class="table-pretty">
             <tr>
                <td>Hello</td>
@@ -149,8 +155,8 @@
          </table>
       </section>
 
+      <h2>Yearly Stats</h2>
       <section class="yearly-stats">
-         <h2>Yearly Stats</h2>
          <table id="table-yearly" class="table-pretty">
             <tr>
                <td>Hello</td>
@@ -158,8 +164,8 @@
          </table>
       </section>
 
+      <h2>Last 10 Races</h2>
       <section class="last-races">
-         <h2>Last 10 Races</h2>
          <table id="table-last-races" class="table-pretty">
             <tr>
                <td>Hello</td>
@@ -167,8 +173,8 @@
          </table>
       </section>
 
+      <h2>Personal Bests</h2>
       <section class="personal-bests">
-         <h2>Personal Bests</h2>
          <!-- Add car dropdown -->
          <table id="table-personal-bests" class="table-pretty">
             <tr>
@@ -177,8 +183,8 @@
          </table>
       </section>
 
+      <h2>MPR Statistics</h2>
       <section class="mpr">
-         <h2>MPR Statistics</h2>
          <div id="mpr-oval">
             <img src="https://via.placeholder.com/52x77" alt="Oval MPR picture">
             <p class="mpr-heading"></p>
@@ -201,8 +207,8 @@
          </div>         
       </section>
 
+      <h2>Participation Tracker</h2>
       <section class="participation">
-         <h2>Participation Tracker</h2>
          <table id="table-participation" class="table-pretty">
             <tr>
                <td>Participation</td>
