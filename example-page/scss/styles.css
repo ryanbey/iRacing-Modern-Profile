@@ -29,7 +29,7 @@ nav > ul > li {
 
 section {
   background-color: #21212A;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 .header-content {
@@ -52,10 +52,11 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: solid 1px #3E3E47;
 }
 .driver-card-img {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 .driver-card-name {
   margin-top: 0.75em;
@@ -69,11 +70,11 @@ section {
 }
 .driver-card-select {
   background-color: #21212A;
-  border-radius: 5px;
-  margin-bottom: 0.2em;
+  border-radius: 6px;
+  margin-bottom: 0.5em;
   width: 45%;
   color: white;
-  padding: 0.5em;
+  padding: 0.25em 0.5em;
   border: solid 1px #3E3E47;
 }
 
@@ -82,6 +83,7 @@ section {
   margin-left: 2rem;
   padding: 1rem;
   display: flex;
+  border-bottom: solid 1px #3E3E47;
 }
 .driver-book > .driver-info-container, .driver-book > .driver-bio-container {
   width: 50%;

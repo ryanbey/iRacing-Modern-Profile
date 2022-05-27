@@ -8,7 +8,7 @@ $text-primary: white;
 
 // Variables
 $content-width: 1200px;
-$border-radius: 10px;
+$border-radius: 6px;
 
 ////
 // GENERAL
@@ -68,6 +68,7 @@ section {
    display: flex;
    flex-direction: column;
    align-items: center;
+   border-bottom: solid 1px $lightgray;
    &-img {
       border-top-left-radius: $border-radius;
       border-top-right-radius: $border-radius;
@@ -84,11 +85,11 @@ section {
    }
    &-select {
       background-color: $darkgray;
-      border-radius: ($border-radius / 2);
-      margin-bottom: .2em;
+      border-radius: $border-radius;
+      margin-bottom: .5em;
       width: 45%;
       color: white;
-      padding: .5em;
+      padding: .25em .5em;
       border: solid 1px $lightgray;
    }
 }
@@ -98,6 +99,7 @@ section {
    margin-left: 2rem;
    padding: 1rem;
    display: flex;
+   border-bottom: solid 1px $lightgray;
    & > .driver-info-container,
    & > .driver-bio-container {
       width: 50%;
