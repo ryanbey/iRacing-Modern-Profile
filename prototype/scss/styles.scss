@@ -14,7 +14,7 @@ $border-radius: 6px;
 // GENERAL
 //////
 body {
-   background: $darkblue url('../images/forum-bg-dark.jpg') no-repeat fixed;
+   background: $darkblue /*url('../images/forum-bg-dark.jpg')*/ no-repeat fixed;
    background-size: cover;
    color: $text-primary;
    font-family: 'Roboto', sans-serif;
@@ -36,10 +36,30 @@ nav {
    & > ul {
       display: flex;
       justify-content: space-between;
+      padding-left: 0;
+      list-style: none;
+      margin: 0;
       & > li {
          padding-left: 0;
+         padding: .5em; // KEEP SAME
          list-style: none;
+         white-space: nowrap;
+         overflow: hidden;
       }
+   }
+}
+
+.nav-link {
+   font-size: .95em;
+   text-decoration: none;
+   color: white;
+   padding: .5em; // KEEP SAME
+   &:visited {
+      color: white;
+   }
+   &:hover {
+      background-color: $darkgray;
+      border-radius: $border-radius;
    }
 }
 
@@ -49,10 +69,11 @@ section {
 }
 
 .header-content {
-   max-width: $content-width;
+   width: $content-width;
    display: flex;
    justify-content: space-between;
    align-items: center;
+   padding: .5em 0;
    & > img {
       width: 172px;
       height: 32px;
@@ -107,5 +128,17 @@ section {
    &-heading {
       margin: 0;
       font-size: 1em;
+   }
+   &-text-box {
+      background-color: $darkgray;
+      resize: none;
+      width: 95%;
+      height: 94%;
+      border: 1px solid $lightgray;
+      border-radius: $border-radius;
+      color: $text-primary;
+      font-family: "Roboto", sans-serif;
+      // Add scrollbar styling later
+      // Remove border later!
    }
 }
